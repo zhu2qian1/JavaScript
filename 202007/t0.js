@@ -1,15 +1,17 @@
 function pow(x, n) {
     let result = 1;
 
-    for (let i = 0; i < n; i++){
+    for (let i = 0; i < n; i++) {
         result *= x;
     }
     return result;
 }
 
 let x = prompt("x?", "")
-let n = prompt("n?","")
+let n = prompt("n?", "")
 
 if (n < 0) {
     alert("Power ${n} is not supported, please enter an integer Number,greater than 0")
 }
+
+alert(pow(x, n))
